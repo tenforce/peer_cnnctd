@@ -1,6 +1,5 @@
 (asdf:defsystem :peer-cnnctd
   :name "peer-cnnctd"
-  :owner "TenForce"
   :author "Aad Versteden <madnificent@gmail.com>"
   :version "0.0.1"
   :maintainer "Aad Versteden <madnificent@gmail.com>"

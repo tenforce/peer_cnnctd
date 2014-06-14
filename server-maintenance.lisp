@@ -18,6 +18,6 @@
   "stops the server running on PORT"
   (let ((acceptor (gethash port *servers*)))
     (setf (gethash port *servers*) nil)
-    ;; todo :: stop the acceptor and ensure we disconnect from the peer-cnnctr
+    (unregister-as-peer port)
     (when acceptor
       (hunchentoot:stop acceptor))))
